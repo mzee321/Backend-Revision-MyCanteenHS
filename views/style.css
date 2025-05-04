@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #c3cad9;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Assuming primary color is blue */
+  }
+  
+  input::placeholder {
+    color: #959ead;
+  }
+  
+  button {
+    background-color: #007bff; /* Assuming primary color */
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  /* Label Styling */
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #5a7184;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Title and Subtitle */
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+  
+  .font-bold {
+    font-weight: 700;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-dark-hard {
+    color: #333; /* Dark text color */
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Primary Color */
+  .bg-primary {
+    background-color: #007bff; /* Assuming primary blue */
+  }
+  
+  /* Text Color */
+  .text-white {
+    color: white;
+  }
+  
+  .text-h1 {
+    color: #5a7184;
+  }
+  
+  .text-h1 {
+    color: #959ead;
+  }
+  
+  /* Error message */
+  .text-red-500 {
+    color: #f56565;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem;
+  }
+  
+  .mt-1 {
+    margin-top: 0.25rem;
+  }
+  
+  /* Button styles */
+  .w-full {
+    width: 100%;
+  }
+  
+  .rounded-lg {
+    border-radius: 8px;
+  }
+  
+  .my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .disabled\:opacity-70:disabled {
+    opacity: 0.7;
+  }
+  
+  .disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+  

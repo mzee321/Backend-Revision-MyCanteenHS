@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/views/style.css">
+    <title>Document</title>
+    <script>
+      var status = '<%- JSON.stringify(status) %>';
+      if (JSON.parse(status) == "verified") {
+        if (confirm("Do you want to login?")) {
+          window.location.href = "http://localhost:3000/";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <section className="container mx-auto px-5 py-10">
+      <div className="w-full max-w-sm mx-auto">
+        <h1 className="font-roboto text-2xl font-bold text-center text-dark-hard mb-8">
+          Reset Password
+        </h1>
+        <h2 className="text-center mb-4"><%= email %></h2>
+        <form action="" method="post" className="w-full">
+          <div className="flex flex-col mb-6 w-full">
+            <label
+              for="password"
+              className="text-[#5a7184] font-semibold block"
+            >
+              New Password
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter new password"
+              className="placeholder:text-[#959ead] text-dark-hard mt-3 rounded-lg px-5 py-4 font-semibold block outline-none border border-[#c3cad9]"
+            />
+          </div>
+
+          <div className="flex flex-col mb-6 w-full">
+            <label
+              for="confirm-password"
+              className="text-[#5a7184] font-semibold block"
+            >
+              Confirm Password
+            </label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Confirm new password"
+              className="placeholder:text-[#959ead] text-dark-hard mt-3 rounded-lg px-5 py-4 font-semibold block outline-none border border-[#c3cad9]"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-primary text-white font-bold text-lg py-4 px-8 w-full rounded-lg my-6"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
